@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="id">
+    <head>
+    <meta charset="UTF-8">
+    <title>Login</title>
+    <style>
+
+    body {
+        font-family: Arial, sans-serif;
+        height: 100vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+    /*Background gambar + gradasi*/
+        background: linear-gradient(135deg, #4e342e9e),
+        url("foodie\ house.jpg");
+        background-size: cover;
+        background-position: center;
+    }
+
+    /* Animasi background */
+    @keyframes bgMove {
+
+        100% {
+          background-position: center;
+        }
+    }
+
+    .box {
+        color: white;
+        background: rgba(255, 255, 255, 0.276);
+        padding: 35px;
+        width: 320px;
+        border-radius: 100px;
+        box-shadow: 0 5px 15px rgba(0,0,0,0.397);
+    }
+
+    @keyframes fadeSlide {
+        from {
+            opacity: 0;
+            transform: translateY(10px);
+        }
+        to {
+            opacity: 1;
+            transform: translateY(0);
+        }
+    }
+
+    h2 {
+        text-align: center;
+    }
+
+    label {
+        margin-top: 10px;
+        display: block;
+    }
+
+    input {
+        width: 93%;
+        padding: 10px;
+        margin-top: 5px;
+        border-radius: 5px;
+        border: 1px solid #ccc;
+    }
+
+     button {
+        width: 100%;
+        padding: 10px;
+        margin-top: 20px;
+        background: #4e342e;
+        border: none;
+        color: white;
+        font-size: 16px;
+        border-radius: 5px;
+        cursor: pointer;
+    }
+
+    button:hover {
+        background: #3e2723;
+    }
+
+    button a {
+        color: white;
+        text-decoration: none;
+        display: block;
+    }
+
+    p {
+        text-align: center;
+        margin-top: 15px;
+    }
+
+    a {
+        color: #ffffff;
+        text-decoration: none;
+    }
+    
+    </style>
+    </head>
+
+    <div class="box">
+        <h2>Login</h2>
+        <marquee behavior="scroll">
+            Silahkan masuk untuk melanjutkan.
+        </marquee>
+        
+        <form>
+            <label>Username</label>
+            <input type="text" required>
+
+            <label>Password</label>
+            <input type="text" required>
+
+            <button type="submit"><a href="sudah login/1.homeabout.html">Login</button></a>
+
+            <p>Belum punya akun? <a href=".registrasi.html">Daftar</a></p>
+
+        
+        </form>
+    </div>
+
+</style>
+</head>
+</html>
